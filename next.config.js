@@ -12,7 +12,7 @@ const nextConfig = {
   },
   /** Deployment */
   output: 'export',
-  basePath: 'portfolio',
+  basePath: '/portfolio',
 }
 
 module.exports = nextConfig

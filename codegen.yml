@@ -1,0 +1,9 @@
+schema: https://docs.github.com/public/schema.docs.graphql
+documents: './src/lib/graphql/**/*.ts'
+generates:
+  ./src/lib/graphql/generated.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+    config:
+      fetcher: graphql-request

@@ -1,0 +1,11 @@
+{
+  "header": {
+    "link": {
+      "about": "Sobre mi",
+      "repositories": "Repositorios"
+    }
+  },
+  "repositories": {
+    "title": "Repositorios fijados"
+  }
+}

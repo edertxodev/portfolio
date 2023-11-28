@@ -1,0 +1,11 @@
+{
+  "header": {
+    "link": {
+      "about": "Nire buruz",
+      "repositories": "Biltegiak"
+    }
+  },
+  "repositories": {
+    "title": "Biltegi finkoak"
+  }
+}

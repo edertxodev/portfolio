@@ -1,0 +1,11 @@
+{
+  "header": {
+    "link": {
+      "about": "About",
+      "repositories": "Repositories"
+    }
+  },
+  "repositories": {
+    "title": "Pinned repositories"
+  }
+}

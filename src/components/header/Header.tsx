@@ -12,11 +12,14 @@ import { getRouteByName, routes } from '@/lib/routes'
 import { mPlusCode } from '@/lib/fonts'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import LocaleToggle from '@/components/header/LocaleToggle'
 import Sidevar from '@/components/header/Sidevar'
 import ThemeToggle from '@/components/header/ThemeToggle'
 import useScroll from '@/lib/hooks/useScroll'
+import useTranslation from '@/lib/hooks/useTranslation'
 
 export default function Header() {
+  const { t } = useTranslation()
   const { y: scrollY } = useScroll()
   const [scrolled, setScrolled] = useState<boolean>(false)
 
@@ -44,7 +47,9 @@ export default function Header() {
                   }`}
                 >
                   <Link href={route.path} legacyBehavior passHref>
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>{route.name}</NavigationMenuLink>
+                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                      {t(`header.link.${route.name}`)}
+                    </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
               ) : null
@@ -52,6 +57,7 @@ export default function Header() {
           </NavigationMenuList>
         </NavigationMenu>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          <LocaleToggle />
           <ThemeToggle className="mr-2" />
         </div>
       </nav>

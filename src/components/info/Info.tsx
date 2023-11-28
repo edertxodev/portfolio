@@ -16,7 +16,7 @@ export default async function Info() {
         width={252}
         height={252}
         alt={data?.name ?? ''}
-        className="rounded-full shadow-2xl mb-4 md:mb-0"
+        className="rounded-full shadow-2xl mb-4 ml-2 md:mb-0"
       />
       <div className="flex flex-col justify-center w-full text-center">
         <h1 className="text-4xl pb-2">{data?.name}</h1>

@@ -1,9 +1,38 @@
 {
+  "experiences": {
+    "company": {
+      "description": {
+        "dinycon": "Backend server with <b><u>C#</u></b> and development of a <i>REST API</i> with <b><u>Java Spring</u></b>",
+        "dinycon-practice": "(WORK PRACTICES) </br> Backend server with <b><u>C#</u></b> and a microservice with <b><u>NodeJS</u></b>",
+        "diversius": "Several multi-client projects with <b><u>Symfony</u></b>",
+        "feelfree": "Main website with <b><u>Symfony</u></b> and development of a <i>REST API</i> for an APP aimed at mobile in <b><u>Angular</u>< /b>",
+        "izertis": "Different microservices <i>REST API</i> with <b><u>Symfony</u></b> and frontend with <b><u>React</u></b>",
+        "titanium": "Frontend development of own application with <b><u>React</u></b>",
+        "wegetit": "Several multi-client projects with <b><u>Laravel</u></b> as backend and <b><u>React</u></b> as frontend, as well as integration into different environments"
+      }
+    },
+    "position": {
+      "frontendDeveloper": "Frontend Developer",
+      "fullstackDeveloper": "Fullstack Developer",
+      "investigationDeveloper": "R+D Developer"
+    },
+    "title": "Work experience"
+  },
+  "general": {
+    "dates": {
+      "present": "Now"
+    }
+  },
   "header": {
     "link": {
       "about": "About",
+      "experience": "Work experience",
       "repositories": "Repositories"
     }
+  },
+  "info": {
+    "description": "Hello! I'm Eder, Frontend developer. I love developing in React/NextJS, discovering new technologies and researching the best solutions. In my free time I also play the guitar and other things.",
+    "title": "Frontend Developer"
   },
   "repositories": {
     "title": "Pinned repositories"

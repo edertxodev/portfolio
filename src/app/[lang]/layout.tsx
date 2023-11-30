@@ -32,7 +32,7 @@ export default async function RootLayout({
 
   return (
     <html lang={params.lang} className="scroll-smooth">
-      <body className={`${sourceCodePro.className} antialiased px-8 lg:px-32`}>
+      <body className={`${sourceCodePro.className} antialiased`}>
         <Providers dictionary={dictionary}>
           <Header />
           {children}

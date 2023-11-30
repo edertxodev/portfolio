@@ -1,5 +1,6 @@
 'use client'
 
+import { HeaderItemProps } from '@/components/header/Header'
 import { Locale, i18n } from '../../../i18n-config'
 import {
   NavigationMenu,
@@ -8,11 +9,12 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu'
+import { cn } from '@/lib/utils'
 import { getRouteByName } from '@/lib/routes'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 
-export default function LocaleToggle() {
+export default function LocaleToggle({ scrolled }: HeaderItemProps) {
   const pathname = usePathname()
 
   function redirectedPathname(locale: Locale) {
@@ -30,7 +32,10 @@ export default function LocaleToggle() {
           <NavigationMenuItem key={locale}>
             <Link href={redirectedPathname(locale)} legacyBehavior passHref>
               <NavigationMenuLink
-                className={`${navigationMenuTriggerStyle()} ${pathname.includes(locale) ? 'underline' : ''} !px-2`}
+                className={cn(`${navigationMenuTriggerStyle()} !px-2`, {
+                  underline: pathname.includes(locale),
+                  '!text-white': !scrolled,
+                })}
               >
                 {locale}
               </NavigationMenuLink>

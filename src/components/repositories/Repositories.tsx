@@ -13,13 +13,15 @@ export default async function Repositories({ params }: LocaleParams) {
   const data = await getUserData()
 
   return (
-    <section id="repositories" className="px-8">
+    <section id="repositories" className="px-2 md:px-8">
       <div className="flex flex-col lg:flex-row-reverse">
-        <h2 className={`${anton.className} text-7xl lg:text-8xl px-16 text-green-800 dark:text-white text-center`}>
+        <h2
+          className={`${anton.className} text-6xl md:text-7xl lg:text-8xl md:px-16 text-green-800 dark:text-white text-center`}
+        >
           {t.repositories.title}
         </h2>
         <Separator className="my-12 lg:hidden bg-green-800/60 dark:bg-white/60" />
-        <div className="flex flex-wrap px-16 lg:border-r border-green-800/60 dark:border-white/60">
+        <div className="flex flex-wrap md:px-16 lg:border-r border-green-800/60 dark:border-white/60">
           {data?.pinnedItems.nodes?.map((repository) => (
             <div className="w-full md:w-1/2 p-8" key={repository?.id}>
               <ExternalLink href={repository?.url}>

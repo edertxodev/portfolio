@@ -1,9 +1,38 @@
 {
+  "experiences": {
+    "company": {
+      "description": {
+        "dinycon": "Servidor backend con <b><u>C#</u></b> y desarrollo de una <i>API REST</i> con <b><u>Java Spring</u></b>",
+        "dinycon-practice": "(PRÁCTICAS LABORALES) </br> Servidor backend con <b><u>C#</u></b> y un microservicio con <b><u>NodeJS</u></b>",
+        "diversius": "Varios proyectos multicliente con <b><u>Symfony</u></b>",
+        "feelfree": "Web principal con <b><u>Symfony</u></b> y desarrollo de una <i>API REST</i> para una APP dirigida a móvil en <b><u>Angular</u></b>",
+        "izertis": "Distintos microservicios <i>REST API</i> con <b><u>Symfony</u></b> y frontend con <b><u>React</u></b>",
+        "titanium": "Desarrollo del frontal de una aplicación propia con <b><u>React</u></b>",
+        "wegetit": "Varios proyectos multicliente con <b><u>Laravel</u></b> como backend y <b><u>React</u></b> como frontend, así como la integración en los distintos entornos"
+      }
+    },
+    "position": {
+      "frontendDeveloper": "Frontend Developer",
+      "fullstackDeveloper": "Fullstack Developer",
+      "investigationDeveloper": "R+D Developer"
+    },
+    "title": "Experiencia laboral"
+  },
+  "general": {
+    "dates": {
+      "present": "Actualidad"
+    }
+  },
   "header": {
     "link": {
       "about": "Sobre mi",
+      "experience": "Experiencia laboral",
       "repositories": "Repositorios"
     }
+  },
+  "info": {
+    "description": "¡Hola! Soy Eder, desarrollador Frontend. Me encanta desarrollar en React/NextJS, descubrir nuevas tecnologías e investigar las mejores soluciones. En mis ratos libres también toco la guitarra y otras cosas.",
+    "title": "Frontend Developer"
   },
   "repositories": {
     "title": "Repositorios fijados"

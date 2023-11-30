@@ -13,7 +13,7 @@ export default async function Repositories({ params }: LocaleParams) {
   const data = await getUserData()
 
   return (
-    <section id="repositories" className="px-2 md:px-8">
+    <section id="repositories" className="px-2 md:px-8 kaixo">
       <div className="flex flex-col lg:flex-row-reverse">
         <h2
           className={`${anton.className} text-6xl md:text-7xl lg:text-8xl md:px-16 text-green-800 dark:text-white text-center`}

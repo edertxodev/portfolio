@@ -1,9 +1,38 @@
 {
+  "experiences": {
+    "company": {
+      "description": {
+        "dinycon": "Backend zerbitzaria <b><u>C#</u></b>-rekin eta <i>REST API</i> baten garapena <b><u>Java Spring</u></b>-rekin",
+        "dinycon-practice": "(LAN PRAKTIKAK) </br> Backend zerbitzaria <b><u>C#</u></b>-rekin eta mikrozerbitzu bat <b><u>NodeJS</u></b>-rekin",
+        "diversius": "Bezero anitzeko hainbat proiektu <b><u>Symfony</u></b>rekin",
+        "feelfree": "Webgune nagusia <b><u>Symfony</u></b>-rekin eta <i>REST API</i> baten garapena <b><u>Angular</u>-en mugikorrera zuzendutako APP baterako. /b>",
+        "izertis": "<i>REST API</i> mikrozerbitzu ezberdinak <b><u>Symfony</u></b> eta <b><u>React</u></b>-rekin",
+        "titanium": "Berezko aplikazioaren frontend garapena <b><u>React</u></b>-rekin",
+        "wegetit": "Hainbat bezero anitzeko proiektuak <b><u>Laravel</u></b> backend gisa eta <b><u>React</u></b> frontend gisa, baita ingurune ezberdinetan integratzea ere"
+      }
+    },
+    "position": {
+      "frontendDeveloper": "Frontend Developer",
+      "fullstackDeveloper": "Fullstack Developer",
+      "investigationDeveloper": "R+D Developer"
+    },
+    "title": "Lan esperientzia"
+  },
+  "general": {
+    "dates": {
+      "present": "Orain"
+    }
+  },
   "header": {
     "link": {
-      "about": "Nire buruz",
+      "about": "Niri buruz",
+      "experience": "Lan esperientzia",
       "repositories": "Biltegiak"
     }
+  },
+  "info": {
+    "description": "Kaixo! Eder naiz, Frontend programatzailea. React/NextJS-rekin lan egitea maite dut, teknologia berriak ezagutu eta soluzio hoberenak ikertu. Nire solasaldian ere gitarra jotzen dut eta beste gauz batzuk.",
+    "title": "Frontend Developer"
   },
   "repositories": {
     "title": "Biltegi finkoak"

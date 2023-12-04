@@ -5,7 +5,7 @@ import { gql } from 'graphql-request'
 export async function getUserData() {
   const query = gql`
     query GetMe {
-      user(login: "edertxodw") {
+      user(login: "edertxodev") {
         ... on User {
           name
           bio

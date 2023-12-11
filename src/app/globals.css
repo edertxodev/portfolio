@@ -84,3 +84,32 @@
     @apply drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)];
   }
 }
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  @apply w-1;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-green-600;
+}
+
+.dark ::-webkit-scrollbar-track {
+  @apply bg-neutral-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-md bg-green-900;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  @apply bg-neutral-600;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-green-800;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  @apply bg-neutral-400;
+}

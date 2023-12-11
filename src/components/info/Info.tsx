@@ -13,7 +13,7 @@ export default async function Info({ params }: LocaleParams) {
   return (
     <section
       id="about"
-      className="h-screen pb-0 xl:pb-6 pl-0 xl:pl-6 ml-0 xl:ml-60 xl:border-b xl:border-l border-green-800/60 dark:border-neutral-600"
+      className="min-h-screen pb-0 xl:pb-6 pl-0 xl:pl-6 ml-0 xl:ml-60 xl:border-b xl:border-l border-green-800/60 dark:border-neutral-600"
     >
       <div className="flex h-full pt-48 pb-32 px-8 items-center justify-center bg-info">
         <div className="flex flex-col-reverse md:flex-row text-white">

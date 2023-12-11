@@ -29,7 +29,10 @@ export default function Sidevar({ scrolled }: HeaderItemProps) {
       </SheetTrigger>
       <SheetContent className="flex flex-col min-h-screen px-0 bg-green-800 dark:bg-neutral-800 border-none shadow-md">
         <SheetHeader className="!block !text-left px-4 pb-4">
-          <ThemeToggle />
+          <ThemeToggle setOpenedSidevar={setOpen} />
+          <div className="flex justify-end">
+            <LocaleToggle />
+          </div>
         </SheetHeader>
         <div className="flex flex-col">
           {routes.map((route) =>
@@ -46,9 +49,6 @@ export default function Sidevar({ scrolled }: HeaderItemProps) {
               </span>
             ) : null
           )}
-        </div>
-        <div className="mt-auto px-8">
-          <LocaleToggle />
         </div>
       </SheetContent>
     </Sheet>

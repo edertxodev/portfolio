@@ -18,6 +18,9 @@
     },
     "title": "Experiencia laboral"
   },
+  "footer": {
+    "madeWithLove": "Hecho con ♥ utilizando Next.js"
+  },
   "general": {
     "dates": {
       "present": "Actualidad"
@@ -27,12 +30,16 @@
     "link": {
       "about": "Sobre mi",
       "experience": "Experiencia laboral",
+      "projects": "Proyectos",
       "repositories": "Repositorios"
     }
   },
   "info": {
     "description": "¡Hola! Soy Eder, desarrollador Frontend. Me encanta desarrollar en React/NextJS, descubrir nuevas tecnologías e investigar las mejores soluciones. En mis ratos libres también toco la guitarra y otras cosas.",
     "title": "Frontend Developer"
+  },
+  "projects": {
+    "title": "Proyectos públicos"
   },
   "repositories": {
     "title": "Repositorios fijados"

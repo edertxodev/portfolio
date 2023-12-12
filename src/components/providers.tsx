@@ -12,7 +12,7 @@ type ProvidersProps = {
 
 export async function Providers({ children, dictionary, ...props }: ProvidersProps) {
   return (
-    <ThemeProvider attribute="class" {...props}>
+    <ThemeProvider attribute="class" enableSystem={false} {...props}>
       <LanguageContext.Provider value={dictionary}>{children}</LanguageContext.Provider>
     </ThemeProvider>
   )

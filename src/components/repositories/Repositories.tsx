@@ -13,17 +13,19 @@ export default async function Repositories({ params }: LocaleParams) {
   const data = await getUserData()
 
   return (
-    <section id="repositories" className="px-8">
-      <div className="flex flex-col lg:flex-row-reverse">
-        <h2 className={`${anton.className} text-7xl lg:text-8xl px-16 text-green-800 dark:text-white text-center`}>
+    <section id="repositories" className="px-2 md:px-8">
+      <div className="flex flex-col 2xl:flex-row items-center">
+        <h2
+          className={`${anton.className} text-6xl md:text-7xl 2xl:text-8xl md:px-16 text-green-800 dark:text-white text-center`}
+        >
           {t.repositories.title}
         </h2>
-        <Separator className="my-12 lg:hidden bg-green-800/60 dark:bg-white/60" />
-        <div className="flex flex-wrap px-16 lg:border-r border-green-800/60 dark:border-white/60">
+        <Separator className="my-12 2xl:hidden bg-green-800/60 dark:bg-white/60" />
+        <div className="flex flex-wrap md:px-16 2xl:border-l border-green-800/60 dark:border-white/60">
           {data?.pinnedItems.nodes?.map((repository) => (
             <div className="w-full md:w-1/2 p-8" key={repository?.id}>
               <ExternalLink href={repository?.url}>
-                <Card className="hover:bg-green-50 hover:dark:bg-white/5">
+                <Card className="default-transition hover:bg-green-50 hover:dark:bg-white/5">
                   <CardHeader className="text-2xl !flex-row">
                     <FontAwesomeIcon icon={faGithub} size="lg" className="mr-4" />
                     {repository?.name}

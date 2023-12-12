@@ -9,12 +9,10 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu'
-import { anton } from '@/lib/fonts'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { getRouteByName, routes } from '@/lib/routes'
+import { routes } from '@/lib/routes'
 import { useEffect, useState } from 'react'
 import ExternalLink from '@/components/ui/external-link'
-import Link from 'next/link'
 import LocaleToggle from '@/components/header/LocaleToggle'
 import Sidevar from '@/components/header/Sidevar'
 import ThemeToggle from '@/components/header/ThemeToggle'

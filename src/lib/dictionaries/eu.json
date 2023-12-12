@@ -18,6 +18,9 @@
     },
     "title": "Lan esperientzia"
   },
+  "footer": {
+    "madeWithLove": "♥-rekin egina Next.js erabiltzen"
+  },
   "general": {
     "dates": {
       "present": "Orain"
@@ -27,12 +30,16 @@
     "link": {
       "about": "Niri buruz",
       "experience": "Lan esperientzia",
+      "projects": "Proiektuak",
       "repositories": "Biltegiak"
     }
   },
   "info": {
     "description": "Kaixo! Eder naiz, Frontend programatzailea. React/NextJS-rekin lan egitea maite dut, teknologia berriak ezagutu eta soluzio hoberenak ikertu. Nire solasaldian ere gitarra jotzen dut eta beste gauz batzuk.",
     "title": "Frontend Developer"
+  },
+  "projects": {
+    "title": "Proiektu publikoak"
   },
   "repositories": {
     "title": "Biltegi finkoak"

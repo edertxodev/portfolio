@@ -7,7 +7,12 @@ type ExternalLinkProps = {
 
 export default function ExternalLink({ href, className, children }: ExternalLinkProps) {
   return (
-    <a target="_blank" href={href} rel="noopener noreferrer" className={`${className} transition-all ease-in-out`}>
+    <a
+      target="_blank"
+      href={href}
+      rel="noopener noreferrer"
+      className={`transition-all ease-in-out ${className ?? ''}`}
+    >
       {children}
     </a>
   )

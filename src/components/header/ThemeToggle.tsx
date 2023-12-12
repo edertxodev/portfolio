@@ -7,7 +7,7 @@ import { useCallback } from 'react'
 import { useTheme } from 'next-themes'
 
 type ThemeToggleProps = {
-  setOpenedSidevar?: () => void
+  setOpenedSidevar?: (value: boolean) => void
 } & HeaderItemProps
 
 export default function ThemeToggle({ className, scrolled, setOpenedSidevar }: ThemeToggleProps) {
@@ -16,7 +16,7 @@ export default function ThemeToggle({ className, scrolled, setOpenedSidevar }: T
   const handleThemeChange = useCallback(() => {
     setTheme(theme === 'light' ? 'dark' : 'light')
     setOpenedSidevar?.(false)
-  }, [setTheme, theme])
+  }, [setOpenedSidevar, setTheme, theme])
 
   return (
     <Button variant="link" onClick={handleThemeChange} className={className}>

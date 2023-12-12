@@ -22,19 +22,19 @@ export default function Experiences({ params }: LocaleParams) {
 
   return (
     <section id="experience" className="px-8">
-      <div className="flex flex-col lg:flex-row">
+      <div className="flex flex-col 2xl:flex-row items-center">
         <h2
-          className={`${anton.className} text-6xl md:text-7xl lg:text-8xl md:px-16 text-green-800 dark:text-white text-center`}
+          className={`${anton.className} text-6xl md:text-7xl 2xl:text-8xl md:px-16 text-green-800 dark:text-white text-center`}
         >
           {t('experiences.title')}
         </h2>
-        <Separator className="my-12 lg:hidden bg-green-800/60 dark:bg-white/60" />
+        <Separator className="my-12 2xl:hidden bg-green-800/60 dark:bg-white/60" />
         <VerticalTabs
           defaultValue={EXPERIENCES[0]?.id}
           orientation="horizontal"
-          className="md:px-16 lg:border-l border-green-800/60 dark:border-white/60 rounded-none flex-col 2xl:flex-row gap-0"
+          className="md:px-16 2xl:border-l border-green-800/60 dark:border-white/60 rounded-none flex-col 2xl:flex-row gap-0"
         >
-          <VerticalTabsList className="rounded-b-none 2xl:rounded-b-lg shadow-md">
+          <VerticalTabsList className="rounded-b-none shadow-md">
             {EXPERIENCES.map((experience) => (
               <ExperienceTabData key={experience.id} experience={experience} />
             ))}

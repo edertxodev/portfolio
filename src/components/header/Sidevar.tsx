@@ -18,7 +18,7 @@ export default function Sidevar({ scrolled }: HeaderItemProps) {
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
-      <SheetTrigger className="flex lg:hidden" asChild>
+      <SheetTrigger className="flex 2xl:hidden" asChild>
         <Button variant="link">
           <FontAwesomeIcon
             icon={faBars}

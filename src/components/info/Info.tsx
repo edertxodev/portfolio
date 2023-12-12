@@ -15,7 +15,7 @@ export default async function Info({ params }: LocaleParams) {
       id="about"
       className="min-h-screen pb-0 xl:pb-6 pl-0 xl:pl-6 ml-0 xl:ml-60 xl:border-b xl:border-l border-green-800/60 dark:border-neutral-600"
     >
-      <div className="flex h-full pt-48 pb-32 px-8 items-center justify-center bg-info">
+      <div className="flex h-screen pt-48 pb-32 px-8 items-center justify-center bg-info">
         <div className="flex flex-col-reverse md:flex-row text-white">
           <div className="flex w-full md:w-1/2 text-center md:text-left flex-col justify-center md:pl-12">
             <h1 className={`${anton.className} text-6xl md:text-8xl pb-6 text-shadow md:text-right`}>{t.info.title}</h1>

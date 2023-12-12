@@ -18,6 +18,9 @@
     },
     "title": "Work experience"
   },
+  "footer": {
+    "madeWithLove": "Made with ♥ using Next.js"
+  },
   "general": {
     "dates": {
       "present": "Now"
@@ -27,12 +30,16 @@
     "link": {
       "about": "About",
       "experience": "Work experience",
+      "projects": "Projects",
       "repositories": "Repositories"
     }
   },
   "info": {
     "description": "Hello! I'm Eder, Frontend developer. I love developing in React/NextJS, discovering new technologies and researching the best solutions. In my free time I also play the guitar and other things.",
     "title": "Frontend Developer"
+  },
+  "projects": {
+    "title": "Public projects"
   },
   "repositories": {
     "title": "Pinned repositories"

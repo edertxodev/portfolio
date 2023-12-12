@@ -6,12 +6,17 @@ import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 import { useCallback } from 'react'
 import { useTheme } from 'next-themes'
 
-export default function ThemeToggle({ className, scrolled }: HeaderItemProps) {
+type ThemeToggleProps = {
+  setOpenedSidevar?: (value: boolean) => void
+} & HeaderItemProps
+
+export default function ThemeToggle({ className, scrolled, setOpenedSidevar }: ThemeToggleProps) {
   const { theme, setTheme } = useTheme()
 
   const handleThemeChange = useCallback(() => {
     setTheme(theme === 'light' ? 'dark' : 'light')
-  }, [setTheme, theme])
+    setOpenedSidevar?.(false)
+  }, [setOpenedSidevar, setTheme, theme])
 
   return (
     <Button variant="link" onClick={handleThemeChange} className={className}>

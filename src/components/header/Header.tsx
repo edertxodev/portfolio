@@ -9,12 +9,10 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu'
-import { anton } from '@/lib/fonts'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { getRouteByName, routes } from '@/lib/routes'
+import { routes } from '@/lib/routes'
 import { useEffect, useState } from 'react'
 import ExternalLink from '@/components/ui/external-link'
-import Link from 'next/link'
 import LocaleToggle from '@/components/header/LocaleToggle'
 import Sidevar from '@/components/header/Sidevar'
 import ThemeToggle from '@/components/header/ThemeToggle'
@@ -32,25 +30,29 @@ export default function Header() {
   const [scrolled, setScrolled] = useState<boolean>(false)
 
   useEffect(() => {
-    setScrolled(scrollY > 0)
+    setScrolled(scrollY > 50)
   }, [scrollY])
 
   return (
-    <header className={cn('fixed inset-x-0 top-0 z-50', { 'shadow bg-white/95 dark:bg-neutral-900/95': !!scrolled })}>
+    <header
+      className={cn('fixed inset-x-0 top-0 z-50 default-transition', {
+        'shadow bg-white/95 dark:bg-neutral-900/95': !!scrolled,
+      })}
+    >
       <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <Link href={getRouteByName('home').path} className="-m-1.5 p-1.5">
+          {/* <Link href={getRouteByName('home').path} className="-m-1.5 p-1.5">
             <span
               className={cn(`${anton.className} text-4xl font-bold text-white xl:text-neutral-950 xl:dark:text-white`, {
                 'text-neutral-950 dark:text-white': scrolled,
               })}
             >
-              {scrolled ? 'EF' : 'Eder Ferreira'}
-            </span>
-          </Link>
+              Eder Ferreira
+            </span> 
+          </Link>*/}
         </div>
         <Sidevar scrolled={scrolled} />
-        <NavigationMenu className="hidden lg:flex">
+        <NavigationMenu className="hidden 2xl:flex">
           <NavigationMenuList>
             {routes.map((route, index) =>
               !['home'].includes(route.name) ? (
@@ -76,7 +78,7 @@ export default function Header() {
             )}
           </NavigationMenuList>
         </NavigationMenu>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+        <div className="hidden 2xl:flex 2xl:flex-1 2xl:justify-end">
           <div className="flex flex-row justify-center pt-2 space-x-4 mr-4">
             <ExternalLink href={LINKEDIN_URL} className={cn('hover:opacity-70', { '!text-white': !scrolled })}>
               <FontAwesomeIcon icon={faLinkedin} size="lg" />

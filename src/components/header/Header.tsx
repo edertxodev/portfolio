@@ -19,6 +19,8 @@ import ThemeToggle from '@/components/header/ThemeToggle'
 import useScroll from '@/lib/hooks/useScroll'
 import useTranslation from '@/lib/hooks/useTranslation'
 
+const SCROLL_MIN_VALUE = 50
+
 export type HeaderItemProps = {
   scrolled?: boolean
   className?: string
@@ -30,8 +32,12 @@ export default function Header() {
   const [scrolled, setScrolled] = useState<boolean>(false)
 
   useEffect(() => {
-    setScrolled(scrollY > 50)
+    setScrolled(scrollY > SCROLL_MIN_VALUE)
   }, [scrollY])
+
+  useEffect(() => {
+    setScrolled(window.scrollY > SCROLL_MIN_VALUE)
+  }, [])
 
   return (
     <header

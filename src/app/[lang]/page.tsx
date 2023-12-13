@@ -9,8 +9,8 @@ export default async function HomePage({ params }: LocaleParams) {
     <main className="flex flex-col space-y-48">
       <Info params={params} />
       <Experiences params={params} />
-      <Projects params={params} />
-      <Repositories params={params} />
+      <Projects />
+      <Repositories />
     </main>
   )
 }

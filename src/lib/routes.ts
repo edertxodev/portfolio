@@ -9,6 +9,7 @@ export const routes: Route[] = [
   { name: 'experience', path: 'experience' },
   { name: 'projects', path: 'projects' },
   { name: 'repositories', path: 'repositories' },
+  { name: 'contact', path: 'contact' },
 ]
 
 export function getRouteByName(name: string) {

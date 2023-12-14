@@ -1,4 +1,23 @@
 {
+  "contact": {
+    "form": {
+      "error": {
+        "description": "An error has occurred, try again later",
+        "title": "Something has gone wrong"
+      },
+      "fields": {
+        "content": "Message",
+        "email": "Email",
+        "name": "Name"
+      },
+      "submit": "Send",
+      "success": {
+        "description": "Thanks for writing! I will answer you as soon as possible",
+        "title": "Message sent"
+      }
+    },
+    "title": "Write me"
+  },
   "experiences": {
     "company": {
       "description": {
@@ -21,6 +40,12 @@
   "footer": {
     "madeWithLove": "Made with ♥ using Next.js"
   },
+  "form": {
+    "error": {
+      "email": "Valid email required",
+      "required": "Required field"
+    }
+  },
   "general": {
     "dates": {
       "present": "Now"
@@ -29,6 +54,7 @@
   "header": {
     "link": {
       "about": "About",
+      "contact": "Contact",
       "experience": "Work experience",
       "projects": "Projects",
       "repositories": "Repositories"

@@ -1,4 +1,5 @@
 import { LocaleParams } from '@/lib/types'
+import Contact from '@/components/contact/Contact'
 import Experiences from '@/components/experiences/Experiences'
 import Info from '@/components/info/Info'
 import Projects from '@/components/projects/Projects'
@@ -11,6 +12,7 @@ export default async function HomePage({ params }: LocaleParams) {
       <Experiences params={params} />
       <Projects />
       <Repositories />
+      <Contact />
     </main>
   )
 }

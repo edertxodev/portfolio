@@ -2,6 +2,7 @@
 
 import { ThemeProvider } from 'next-themes'
 import { ThemeProviderProps } from 'next-themes/dist/types'
+import { Toaster } from '@/components/ui/toaster'
 import { createContext } from 'react'
 
 export const LanguageContext = createContext<any>({})
@@ -14,6 +15,7 @@ export async function Providers({ children, dictionary, ...props }: ProvidersPro
   return (
     <ThemeProvider attribute="class" enableSystem={false} {...props}>
       <LanguageContext.Provider value={dictionary}>{children}</LanguageContext.Provider>
+      <Toaster />
     </ThemeProvider>
   )
 }

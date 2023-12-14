@@ -1,4 +1,23 @@
 {
+  "contact": {
+    "form": {
+      "error": {
+        "description": "Ha ocurrido un error, inténtalo más tarde",
+        "title": "Algo ha ido mal"
+      },
+      "fields": {
+        "content": "Mensaje",
+        "email": "Email",
+        "name": "Nombre"
+      },
+      "submit": "Enviar",
+      "success": {
+        "description": "¡Gracias por escribirme! Te contestaré lo antes posible",
+        "title": "Mensaje enviado"
+      }
+    },
+    "title": "Escríbeme"
+  },
   "experiences": {
     "company": {
       "description": {
@@ -21,6 +40,12 @@
   "footer": {
     "madeWithLove": "Hecho con ♥ utilizando Next.js"
   },
+  "form": {
+    "error": {
+      "email": "Email válido obligatorio",
+      "required": "Campo obligatorio"
+    }
+  },
   "general": {
     "dates": {
       "present": "Actualidad"
@@ -29,6 +54,7 @@
   "header": {
     "link": {
       "about": "Sobre mi",
+      "contact": "Contacto",
       "experience": "Experiencia laboral",
       "projects": "Proyectos",
       "repositories": "Repositorios"

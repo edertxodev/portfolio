@@ -1,4 +1,23 @@
 {
+  "contact": {
+    "form": {
+      "error": {
+        "description": "Errore bat gertatu da, saiatu berriro geroago",
+        "title": "Zerbait gaizki atera da"
+      },
+      "fields": {
+        "content": "Mezua",
+        "email": "Email",
+        "name": "Izena"
+      },
+      "submit": "Bidali",
+      "success": {
+        "description": "Eskerrik asko idazteagatik! Ahalik eta azkarren erantzungo dizut",
+        "title": "Mezua bidalita"
+      }
+    },
+    "title": "Idatz nazazu"
+  },
   "experiences": {
     "company": {
       "description": {
@@ -21,6 +40,12 @@
   "footer": {
     "madeWithLove": "♥-rekin egina Next.js erabiltzen"
   },
+  "form": {
+    "error": {
+      "email": "Email helbide zuzena derrigorrezkoa da",
+      "required": "Derrigorrezko datua"
+    }
+  },
   "general": {
     "dates": {
       "present": "Orain"
@@ -29,6 +54,7 @@
   "header": {
     "link": {
       "about": "Niri buruz",
+      "contact": "Kontaktua",
       "experience": "Lan esperientzia",
       "projects": "Proiektuak",
       "repositories": "Biltegiak"

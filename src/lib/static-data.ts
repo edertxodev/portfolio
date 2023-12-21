@@ -13,15 +13,25 @@ export const APTITUDES: { [key: string]: Aptitude } = {
   java: { name: 'Java', technologyType: 'back' },
   csharp: { name: 'C#', technologyType: 'back' },
   nodejs: { name: 'NodeJS', technologyType: 'back' },
+  nextjs: { name: 'NextJS', technologyType: 'front' },
 }
 
 export const EXPERIENCES: Experience[] = [
+  {
+    id: 'fisify',
+    position: 'experiences.position.fullstackDeveloper',
+    company: 'Fisify',
+    description: 'experiences.company.description.fisify',
+    dateFrom: moment('2022-12-01'),
+    aptitudes: [APTITUDES.react, APTITUDES.typescript, APTITUDES.jest, APTITUDES.nodejs, APTITUDES.nextjs],
+  },
   {
     id: 'titanium',
     position: 'experiences.position.frontendDeveloper',
     company: 'Titanium Industrial Security',
     description: 'experiences.company.description.titanium',
     dateFrom: moment('2022-05-01'),
+    dateTo: moment('2023-12-01'),
     aptitudes: [APTITUDES.react, APTITUDES.typescript, APTITUDES.jest, APTITUDES.threejs],
   },
   {

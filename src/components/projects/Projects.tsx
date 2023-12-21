@@ -10,6 +10,7 @@ import useIsVisibleComponent from '@/lib/hooks/useIsVisibleComponent'
 import useTranslation from '@/lib/hooks/useTranslation'
 
 import feelFreeImage from '@/components/projects/screenshots/feelfree.png'
+import fisifyImage from '@/components/projects/screenshots/fisify.png'
 import rvwImage from '@/components/projects/screenshots/rvw.png'
 import txogitxuImage from '@/components/projects/screenshots/txogitxu.png'
 
@@ -23,6 +24,10 @@ export default function Projects() {
   const contentIsVisible = useIsVisibleComponent(contentRef)
 
   const sliderItems: ImageSlide[] = [
+    {
+      id: 'fisify',
+      content: <ProjectCard title="Fisify" imageSrc={fisifyImage} url="https://www.fisify.com/" />,
+    },
     {
       id: 'feelfree',
       content: <ProjectCard title="Feel Free Rentals" imageSrc={feelFreeImage} url="https://feelfreerentals.com/es/" />,
